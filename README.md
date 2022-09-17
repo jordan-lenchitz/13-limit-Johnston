@@ -1,10 +1,6 @@
 # 13-limit-Johnston
 
-13-limit calculator for note names in extended just intonation using Ben Johnston's system.
-
-Turns a ratio x/y into a 13-limit Johnston note name; returns the prime limit larger than 13 implicated for such ratios.
-
-Outputs consist of a letter name plus some combination of #b7L^v3e+-.
+13-limit calculator for note names in extended just intonation using Ben Johnston's system. Turns a ratio x/y into a 13-limit Johnston note name; returns the prime limit larger than 13 implicated for such ratios. Outputs consist of a letter name plus some combination of #b7L^v3e+-.
 
 #, b, +, -, and 7 correspond directly to their Johnston notation symbols.
 
