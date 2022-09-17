@@ -10,7 +10,8 @@ For more on the algorithm used here, see Appendix A in: Johnston, Timothy Ernest
 
 Outputs consist of a letter name plus some combination of #b7L^v3e+-.
 
-#, b, +, -, and 7 correspond directly to their Johnston notation symbols; L = upside down 7; ^ = ↑, v = ↓, 3 = 13, e = upside down 13.
+#, b, +, -, and 7 correspond directly to their Johnston notation symbols.
+L = upside down 7; ^ = ↑, v = ↓, 3 = 13, e = upside down 13.
 
 Example: convert the pitch 49/55 into a Johnston note name
 
