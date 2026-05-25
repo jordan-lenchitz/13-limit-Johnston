@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "johnston-calculator"
 version = "0.1.0"
-description = "13-limit calculator for note names in extended just intonation using Ben Johnston's system."
+description = "13-limit calculator for note names in extended just intonation using ben johnston's system"
 readme = "README.md"
 requires-python = ">=3.7"
 license = {file = "LICENSE"}
