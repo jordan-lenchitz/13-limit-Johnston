@@ -4,7 +4,7 @@ from collections import Counter
 from typing import Dict, Tuple, List, Union
 
 def get_prime_factors(n: int) -> Dict[int, int]:
-    """Returns a dictionary of prime factors and their counts."""
+    """returns a dictionary of prime factors and their counts"""
     factors = []
     d = 2
     temp = abs(n)
@@ -21,11 +21,11 @@ def get_prime_factors(n: int) -> Dict[int, int]:
 
 def get_johnston_components(x: int, y: int) -> Union[str, Tuple[str, int, int, int, int, int]]:
     """
-    Calculates the Johnston notation components for ratio x/y.
-    Returns either a message string if limit > 13, or a tuple of (letter, sf, pm, sL, ud, e3).
+    calculates the Johnston notation components for ratio x/y
+    returns either a message string if limit > 13, or a tuple of (letter, sf, pm, sL, ud, e3)
     """
     if y == 0:
-        return "Denominator cannot be zero."
+        return "denominator cannot be zero"
     
     px = get_prime_factors(x)
     py = get_prime_factors(y)
@@ -34,7 +34,7 @@ def get_johnston_components(x: int, y: int) -> Union[str, Tuple[str, int, int, i
     if not all_primes:
         limit_num = 1
     else:
-        # Filter out 1 if it's there (though get_prime_factors shouldn't return it)
+        # filter out 1 if it's there just in case
         limit_num = max(all_primes)
 
     if limit_num > 13:
@@ -226,7 +226,7 @@ def get_johnston_components(x: int, y: int) -> Union[str, Tuple[str, int, int, i
 
 def note_name(x: int, y: int, quiet: bool = False) -> str:
     """
-    Returns the Johnston note name for ratio x/y.
+    returns the Johnston note name for ratio x/y
     
     :param x: Numerator
     :param y: Denominator
@@ -303,4 +303,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
