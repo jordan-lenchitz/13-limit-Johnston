@@ -1,42 +1,42 @@
-# 13-limit-Johnston
+# 13-limit-johnston
 
-13-limit calculator for note names in extended just intonation using Ben Johnston's system. Turns a ratio x/y into a 13-limit Johnston note name; returns the prime limit larger than 13 implicated for such ratios. 
+13-limit calculator for note names in extended just intonation using ben johnston's system. turns a ratio x/y into a 13-limit johnston note name; returns the prime limit larger than 13 implicated for such ratios. 
 
-## Usage
+## usage
 
-### Command Line Interface
+### command line interface
 
-You can run the calculator directly from the command line:
+you can run the calculator directly from the command line:
 
 ```bash
 python3 calculator.py 49/55
-# Output: Cb77v+
+# output: cb77v+
 
 python3 calculator.py 3 2
-# Output: G
+# output: g
 ```
 
-### Python Library
+### python library
 
-You can also use it as a library in your own Python projects:
+you can also use it as a library in your own python projects:
 
 ```python
 from calculator import note_name
 
 name = note_name(49, 55)
-print(name) # Cb77v+
+print(name) # cb77v+
 ```
 
-## Johnston Notation Symbols
+## johnston notation symbols
 
-Outputs consist of a letter name plus some combination of #b7L^v3e+-.
+outputs consist of a letter name plus some combination of #b7l^v3e+-.
 
-#, b, +, -, and 7 correspond directly to their Johnston notation symbols.
+#, b, +, -, and 7 correspond directly to their johnston notation symbols.
 
-L = upside down 7; ^ = ↑, v = ↓, 3 = 13, e = upside down 13.
+l = upside down 7; ^ = ↑, v = ↓, 3 = 13, e = upside down 13.
 
-## References
+## references
 
-For more on the Johnston notation system see: Fonville, John. “Ben Johnston's Extended Just Intonation: A Guide for Interpreters.” Perspectives of New Music 29/2 (1991): 106–137. https://www.jstor.org/stable/833435
+for more on the johnston notation system see: fonville, john. “ben johnston's extended just intonation: a guide for interpreters.” perspectives of new music 29/2 (1991): 106–137. https://www.jstor.org/stable/833435
 
-For more on the algorithm used here, see Appendix A in: Johnston, Timothy Ernest. “13-Limit Extended Just Intonation in Ben Johnston’s String Quartet No. 7 and Toby Twining’s Chrysalid Requiem, ‘Gradual/Tract.’” D.M.A. diss., University of Illinois, 2008. https://www.proquest.com/openview/f9d0a27d5b2d659c700412aa241f7265/
+for more on the algorithm used here, see appendix a in: johnston, timothy ernest. “13-limit extended just intonation in ben johnston’s string quartet no. 7 and toby twining’s chrysalid requiem, ‘gradual/tract.’” d.m.a. diss., university of illinois, 2008. https://www.proquest.com/openview/f9d0a27d5b2d659c700412aa241f7265/
