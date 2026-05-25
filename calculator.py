@@ -4,7 +4,7 @@ from collections import Counter
 from typing import Dict, Tuple, List, Union
 
 def get_prime_factors(n: int) -> Dict[int, int]:
-    """returns a dictionary of prime factors and their counts"""
+    """returns dictionary of prime factors & their counts"""
     factors = []
     d = 2
     temp = abs(n)
