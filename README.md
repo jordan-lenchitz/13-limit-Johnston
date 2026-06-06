@@ -58,6 +58,6 @@ l = upside down 7 ^ = up arrow v = down arrow 3 = 13 e = upside down 13
 
 ## references
 
-for more on the johnston notation system see fonville john ben johnstons extended just intonation a guide for interpreters perspectives of new music 292 1991 106137 httpswwwjstororgstable833435
+for more on the johnston notation system see: fonville, john. “ben johnston's extended just intonation: a guide for interpreters.” perspectives of new music 29/2 (1991): 106–137. https://www.jstor.org/stable/833435
 
-for more on the algorithm used here see appendix a in johnston timothy ernest 13-limit extended just intonation in ben johnstons string quartet no 7 and toby twinings chrysalid requiem gradualtract dma diss university of illinois 2008 httpswwwproquestcomopenviewf9d0a27d5b2d659c700412aa241f7265
+for more on the algorithm used here, see appendix a in: johnston, timothy ernest. “13-limit extended just intonation in ben johnston’s string quartet no. 7 and toby twining’s chrysalid requiem, ‘gradual/tract.’” d.m.a. diss., university of illinois, 2008. https://www.proquest.com/openview/f9d0a27d5b2d659c700412aa241f7265/
