@@ -487,6 +487,7 @@ pub fn note_name(x: i64, y: i64, quiet: bool) -> String {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use rand::Rng;
 
     #[test]
     fn test_note_name() {
@@ -504,5 +505,23 @@ mod tests {
         assert_eq!(note_name(23, 16, true), "F#23+");
         assert_eq!(note_name(29, 16, true), "Bb29");
         assert_eq!(note_name(31, 16, true), "B31");
+    }
+
+    #[test]
+    fn test_random_ratios() {
+        let mut rng = rand::thread_rng();
+        for _ in 0..7 {
+            let num = rng.gen_range(1..10000);
+            let den = rng.gen_range(1..10000);
+            
+            let result = note_name(num, den, true);
+            assert!(!result.is_empty());
+            
+            // We can't easily assert the exact string without a reverse parser,
+            // but we can ensure it doesn't panic and returns a non-empty string.
+            // A valid string either starts with 'S' ("Sorry...") or a letter 'A'-'G'
+            let first_char = result.chars().next().unwrap();
+            assert!("CDEFGAB S".contains(first_char));
+        }
     }
 }
