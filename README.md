@@ -4,48 +4,14 @@
 
 ## usage
 
-### command line interface
-
-you can run the calculator directly from the command line
+you can run the calculator directly from the command line using cargo:
 
 ```bash
-python3 calculator.py 49/55
+cargo run -- 49/55
 # output cb77v+
 
-python3 calculator.py 3 2
+cargo run -- 3 2
 # output g
-```
-
-### python library
-
-you can also use it as a library in your own python projects
-
-```python
-from calculator import note_name
-
-name = note_name(49, 55)
-print(name) # cb77v+
-```
-
-### go version
-
-```bash
-cd go
-go run cmd/calculator/main.go 49/55
-```
-
-### typescript version
-
-```bash
-cd ts
-npm start 49/55
-```
-
-### rust version
-
-```bash
-cd rust
-cargo run -- 49/55
 ```
 
 ## johnston notation symbols
