@@ -1,11 +1,12 @@
-# 13-limit-johnston
+# 31-limit-johnston
 
-13-limit calculator for note names in extended just intonation using ben johnstons system turns a ratio xy into a 13-limit johnston note name returns the prime limit larger than 13 implicated for such ratios 
+- 31-limit calculator for note names
+- in extended just intonation
+- using ben johnstons system
+- turns a ratio x/y or x y into a 31-limit johnston note name
+- returns the prime factor larger than 31 otherwise
 
 ## usage
-
-you can run the calculator directly from the command line using cargo:
-
 ```bash
 cargo run -- 49/55
 # output cb77v+
@@ -16,14 +17,19 @@ cargo run -- 3 2
 
 ## johnston notation symbols
 
-outputs consist of a letter name plus some combination of #b7l^v3e+-
+outputs consist of a letter name plus some combination of `#b7l^v3e+-`
 
-# b + - and 7 correspond directly to their johnston notation symbols
-
-l = upside down 7 ^ = up arrow v = down arrow 3 = 13 e = upside down 13
+- `# b + -` and `7` correspond directly to their johnston notation symbols
+- `l` = upside down 7
+- `^` = up arrow
+- `v` = down arrow
+- `3` = 13
+- `e` = upside down 13
 
 ## references
 
-for more on the johnston notation system see: fonville, john. “ben johnston's extended just intonation: a guide for interpreters.” perspectives of new music 29/2 (1991): 106–137. https://www.jstor.org/stable/833435
+john fonville's article from 1991:
+### - [`ben johnston's extended just intonation: a guide for interpreters`](https://www.jstor.org/stable/833435)
 
-for more on the algorithm used here, see appendix a in: johnston, timothy ernest. “13-limit extended just intonation in ben johnston’s string quartet no. 7 and toby twining’s chrysalid requiem, ‘gradual/tract.’” d.m.a. diss., university of illinois, 2008. https://www.proquest.com/openview/f9d0a27d5b2d659c700412aa241f7265/
+timothy ernest johnson's dissertation from 2008:
+### - [`13-limit extended just intonation in ben johnston’s string quartet no. 7 and toby twining’s chrysalid requiem, ‘gradual/tract’`](https://www.proquest.com/openview/f9d0a27d5b2d659c700412aa241f7265/)
